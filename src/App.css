@@ -1,6 +1,6 @@
 .container__banner-top {
   height: 396px;
-  background: linear-gradient(90deg, rgba(1, 1, 1, 0.60) 0%, rgba(1, 1, 1, 0.60) 100%), url(/src/img/banner_1.png) center / cover;
+  background: linear-gradient(90deg, rgba(1, 1, 1, 0.60) 0%, rgba(1, 1, 1, 0.60) 100%), url('/src/img/banner_1.png') center / cover;
   color: #FFFFFF;
 }
 
