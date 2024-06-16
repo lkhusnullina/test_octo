@@ -1,0 +1,196 @@
+.info__middle {
+    display: flex;
+    flex-direction: row;
+    gap: 127px;
+}
+
+.info__block {
+    /* width: 555px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title {
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 68px;
+    letter-spacing: 1.4px;
+    color: #00B6DD;
+}
+
+.info__description {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+}
+
+.image__banner {
+    width: 458px;
+    height: 380px;
+}
+
+.button__block {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.button__main {
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: #00B6DD;
+    color: #FFFFFF;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    border: none;
+}
+
+.button__violet {
+    background-color: #081580;
+}
+
+.button__transparent {
+    background-color: transparent;
+    border: 1px solid #00B6DD;
+}
+
+
+@media (min-width: 769px) and (max-width: 992px)  {
+    .info__middle {
+        gap: 30px;
+    }
+
+    .image__banner {
+        width: 455px;
+        height: 332px;
+    }
+
+    .info__title {
+        margin-bottom: 20px;
+        font-size: 54px;
+        line-height: 60px;
+        letter-spacing: 1.2px;
+    }
+
+    .info__description {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+  
+  }
+  
+  @media (min-width: 577px) and (max-width: 768px) {
+    .info__middle {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .info__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image__banner {
+        width: 596px;
+        height: 364px;
+    }
+
+    .info__title {
+        margin-bottom: 14px;
+        font-size: 46px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .info__description {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 576px) {
+
+    .info__middle {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .info__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__title {
+        margin-bottom: 14px;
+        font-size: 46px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .info__description {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .image__banner {
+        width: 450px;
+        height: 275px;
+    }
+
+  }
+
+  @media (max-width: 320px) {
+
+    .info__middle {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info__title {
+        margin-bottom: 14px;
+        font-size: 46px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .info__description {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .info__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image__banner {
+        width: 290px;
+        height: 146px;
+    }
+
+    .button__block {
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+  
