@@ -1,6 +1,7 @@
 .card {
     position: relative;
 }
+
 .card__item {
     padding: 30px;
     width: 360px;
@@ -20,6 +21,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
+    letter-spacing: 1.2px;
     background-color: #00B6DD;
     z-index: 1;
     text-transform: uppercase;
@@ -46,6 +48,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
+    letter-spacing: 1.2px;
     color: #000000;
 }
 
@@ -54,10 +57,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0.8px;
     color: #000000;
 }
 
-.button__main {
+.card__button {
+    display: block;
+    margin-top: auto;
     width: 160px;
     height: 40px;
     background-color: #00B6DD;
@@ -66,7 +72,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.9px;
     border: none;
 }
 
@@ -78,7 +84,16 @@
     background-color: #081580;
 }
 
-@media (max-width: 992px)  {
+.card__blueSpan {
+    color: #00B6DD;
+}
+
+.card__darkblueSpan {
+   color: #081580;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .card__item {
         padding: 30px;
         width: 455px;
@@ -109,10 +124,25 @@
         line-height: 26px;
         letter-spacing: 0.8px;
     }
+    .card__button {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.9px;
+    }
   
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .card__sticker {
+        padding: 5px 14px 7px 14px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
     .card__item {
         padding: 28px;
         width: 345px;
@@ -125,7 +155,7 @@
     }
 
     .card__img {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         width: 289px;
         height: 150px;
     }
@@ -143,9 +173,26 @@
         line-height: 22px;
         letter-spacing: 0.6px;
     }
+
+    .card__button {
+        width: 140px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.9px;
+    }
 }
 
-@media (min-width: 321px) and (max-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    .card__sticker {
+        top: 0;
+        padding: 5px 14px 7px 14px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
     .card__item {
         padding: 16px;
         width: 258px;
@@ -158,21 +205,43 @@
     }
 
     .card__img {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
         width: 226px;
         height: 140px;
     }
 
     .card__title {
         margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
     }
 
     .card__text {
         margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.6px;
+    }
+
+    .card__button {
+        width: 140px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.9px;
     }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 575px) {
+
+    .card__sticker {
+        top: 0;
+        padding: 5px 14px 7px 14px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
 
     .card__item {
         padding: 16px;
@@ -189,5 +258,27 @@
         margin-bottom: 12px;
         width: 258px;
         height: 140px;
+    }
+
+    .card__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.6px;
+        
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    .card__button {
+        width: 140px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.9px;
     }
 }

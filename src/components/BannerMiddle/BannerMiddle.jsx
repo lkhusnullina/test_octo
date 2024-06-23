@@ -1,5 +1,5 @@
 import styles from "./BannerMiddle.module.css";
-import bannerMiddle from'../../img/banner_2.png';
+import bannerMiddle from '../../img/big_banner.jpg';
 
 export function BannerMiddle() {
     return (

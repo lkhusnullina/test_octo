@@ -23,7 +23,7 @@
     content: url('../../img/arrow_right.svg'); /* Ссылка на изображение правой стрелки */
 }
 
-@media (min-width: 769px) and (max-width: 992px)  {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .carousel__block {
         margin-top: 80px;
     }
@@ -33,9 +33,9 @@
         padding-bottom: 80px;
     }
   
-  }
+}
   
-  @media (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .carousel__block {
         margin-top: 60px;
     }
@@ -44,9 +44,9 @@
         margin-top: 30px;
         padding-bottom: 60px;
     }
-  }
+}
   
-  @media (min-width: 321px) and (max-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .carousel__block {
         margin-top: 50px;
     }
@@ -55,8 +55,9 @@
         margin-top: 20px;
         padding-bottom: 50px;
     }
-  }
-  @media (max-width: 320px) {
+}
+
+@media screen and (max-width: 575px) {
     .carousel__block {
         margin-top: 50px;
     }
@@ -67,4 +68,4 @@
         display: flex;
         justify-content: center;
     }
-  }
+}

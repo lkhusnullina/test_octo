@@ -1,6 +1,6 @@
 .container__banner-top {
   height: 396px;
-  background: linear-gradient(90deg, rgba(1, 1, 1, 0.60) 0%, rgba(1, 1, 1, 0.60) 100%), url('/src/img/banner_1.png') center / cover;
+  background: linear-gradient(90deg, rgba(1, 1, 1, 0.64) 0%, rgba(1, 1, 1, 0.64) 100%), url('/src/img/banner_1.png') center / cover;
   color: #FFFFFF;
 }
 
@@ -17,7 +17,7 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 992px)  {
+@media screen and (min-width: 992px)  and (max-width: 1199px) {
   .wrapper {
     height: 340px;
   }
@@ -36,7 +36,7 @@
 
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .wrapper {
     height: 276px;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 321px) and (max-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .wrapper {
     height: 236px;
   }
@@ -71,7 +71,8 @@
     padding: 60px 63px;
   }
 }
-@media (max-width: 320px) {
+
+@media screen and (max-width: 575px) {
   .wrapper {
     height: 274px;
   }
@@ -81,10 +82,11 @@
   }
 
   .container__banner-top {
-    height: 144px;
+    height: 274px;
   }
 
   .container__banner-middle {
     padding: 50px 15px;
   }
+  
 }

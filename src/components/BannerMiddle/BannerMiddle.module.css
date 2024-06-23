@@ -1,6 +1,7 @@
 .info__middle {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 127px;
 }
 
@@ -29,6 +30,8 @@
 .image__banner {
     width: 458px;
     height: 380px;
+    object-fit: cover;
+    object-position: left;
 }
 
 .button__block {
@@ -47,7 +50,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.9px;
     border: none;
 }
 
@@ -57,13 +60,13 @@
 
 .button__transparent {
     background-color: transparent;
-    border: 1px solid #00B6DD;
+    border: 2px solid #00B6DD;
 }
 
 
-@media (min-width: 769px) and (max-width: 992px)  {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .info__middle {
-        gap: 30px;
+        gap: 10px;
     }
 
     .image__banner {
@@ -79,14 +82,20 @@
     }
 
     .info__description {
+        max-width: 455px;
         margin-bottom: 30px;
         font-size: 20px;
         line-height: 28px;
     }
+
+    .button__main {
+        width: 150px;
+        height: 40px;
+    }
   
   }
   
-  @media (min-width: 577px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
     .info__middle {
         flex-direction: column;
         align-items: center;
@@ -112,14 +121,24 @@
     }
 
     .info__description {
+        margin-bottom: 30px;
+        max-width: 596px;
         font-size: 18px;
         line-height: 26px;
         letter-spacing: 1px;
         text-align: center;
     }
+
+    .button__main {
+        width: 140px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
   }
   
-  @media (min-width: 321px) and (max-width: 576px) {
+  @media screen and (min-width: 576px) and (max-width: 767px) {
 
     .info__middle {
         flex-direction: column;
@@ -133,6 +152,7 @@
     }
 
     .info__title {
+        max-width: 450px;
         margin-bottom: 14px;
         font-size: 46px;
         line-height: 48px;
@@ -141,6 +161,8 @@
     }
 
     .info__description {
+        margin-bottom: 30px;
+        max-width: 450px;
         font-size: 18px;
         line-height: 26px;
         letter-spacing: 1px;
@@ -151,10 +173,18 @@
         width: 450px;
         height: 275px;
     }
+    
+    .button__main {
+        width: 140px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+    }
 
   }
 
-  @media (max-width: 320px) {
+  @media screen and (max-width: 575px) {
 
     .info__middle {
         flex-direction: column;
@@ -164,6 +194,7 @@
 
     .info__title {
         margin-bottom: 14px;
+        max-width: 290px;
         font-size: 46px;
         line-height: 48px;
         letter-spacing: 1px;
@@ -171,6 +202,8 @@
     }
 
     .info__description {
+        margin-bottom: 30px;
+        max-width: 290px;
         font-size: 18px;
         line-height: 26px;
         letter-spacing: 1px;
@@ -189,7 +222,14 @@
 
     .button__block {
         flex-direction: column;
-        width: 100%;
+    }
+
+    .button__main {
+        width: 290px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
     }
   }
   
