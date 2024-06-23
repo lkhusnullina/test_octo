@@ -1,4 +1,5 @@
 import "./App.css";
+import "normalize.css";
 import { Banner } from "./components/Banner/Banner";
 import { BannerMiddle } from "./components/BannerMiddle/BannerMiddle";
 import { Cards } from "./components/Cards/Cards";

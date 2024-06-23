@@ -18,6 +18,7 @@ const Carousel = () => {
     };
 
     const settings = {
+        arrows: false,
         dots: false,
         infinite: false,
         speed: 500,
@@ -62,7 +63,7 @@ const Carousel = () => {
         ],
       };
 
-    const cards =CardsAll.map((card) => (
+    const cards = CardsAll.map((card) => (
             <Card key={card.id} card={card}/>
           ));
 
@@ -76,7 +77,7 @@ const Carousel = () => {
         <div className={styles.arrow__block}>
             <button className={styles.slickPrev} onClick={previous}></button>
             <button className={styles.slickNext} onClick={next}></button>
-      </div>
+        </div>
       </div>
     );
   };
